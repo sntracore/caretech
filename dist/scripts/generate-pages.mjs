@@ -37,7 +37,7 @@ const organization = {
   name: 'CareTech',
   description: 'Security, networking and fire protection solutions.',
   email: 'caretechforit@gmail.com',
-  telephone: '+91-92447-86801',
+  telephone: '+91-88717-86801',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '101 Bus Stand',
@@ -46,7 +46,10 @@ const organization = {
     postalCode: '454446',
     addressCountry: 'IN'
   },
-  contactPoint: [{ '@type': 'ContactPoint', contactType: 'sales', telephone: '+91-92447-86801', email: 'caretechforit@gmail.com' }]
+  contactPoint: [
+    { '@type': 'ContactPoint', contactType: 'sales', telephone: '+91-88717-86801', email: 'caretechforit@gmail.com' },
+    { '@type': 'ContactPoint', contactType: 'office', telephone: '+91-92447-86801', email: 'caretechforit@gmail.com' }
+  ]
 };
 const schema = JSON.stringify(organization).replaceAll('<', '\\u003c');
 

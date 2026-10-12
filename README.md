@@ -28,4 +28,4 @@ Vercel's `VERCEL_PROJECT_PRODUCTION_URL` is used at build time to generate canon
 
 The optimized assets in `dist/assets/` were made from the supplied brand, customer, project and company logo files. The source folders are kept locally and ignored by Git. To remake the assets, install Pillow and run `python3 scripts/prepare_assets.py` with the original folders present.
 
-The contact form opens the visitor's email app with a prepared message addressed to `caretechforit@gmail.com`. It does not send or store submissions on the website. The listed phone number comes from the supplied CareTech logo PDF.
+The contact form opens the visitor's email app with a prepared message addressed to `caretechforit@gmail.com`. It does not send or store submissions on the website. The main number is +91 88717 86801; the office number from the supplied CareTech logo PDF is +91 92447 86801.
