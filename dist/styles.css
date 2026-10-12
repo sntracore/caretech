@@ -32,14 +32,20 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .project-section{background:#0b223c;color:white}
 .project-section h2{color:white}
 .project-section .section-head p{color:#bed2df}
-.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .project-photo{margin:0;border-radius:13px;overflow:hidden;background:#15324f;position:relative}
-.project-photo img{width:100%;height:255px;object-fit:cover;transition:transform .35s}
+.project-photo img{width:100%;height:300px;object-fit:cover;transition:transform .35s}
 .project-photo:hover img{transform:scale(1.04)}
 .project-photo figcaption{display:flex;justify-content:space-between;align-items:center;padding:13px 17px;font-size:13px;font-weight:700}
 .project-photo figcaption span{color:#45c8e8}
 .contact-info a{display:block;color:#0d4f71;font-size:15px;font-weight:700;margin-top:3px;overflow-wrap:anywhere}
+.office-location{margin-top:22px;padding:25px;border:1px solid #dbe6ed;border-radius:13px;background:#f4f8fb}
+.office-location .eyebrow{margin-bottom:8px}
+.office-location address{font-size:16px;font-style:normal;font-weight:700;line-height:1.6;color:var(--navy)}
+.office-location a{display:inline-block;margin-top:13px;color:#067eaa;font-weight:800;font-size:14px}
+.office-location a:hover{text-decoration:underline}
 .footer-contact{color:#d9edf5!important;font-size:13px!important}
+.footer-address{color:#c4d3df!important;line-height:1.6;max-width:300px}
 .vision-grid{grid-template-columns:repeat(2,1fr)}
 .fire-action{margin-top:22px!important}
 @media(max-width:1050px){.brand{width:190px}.nav{gap:12px}.nav a{font-size:12px}.customer-grid{grid-template-columns:repeat(3,1fr)}}

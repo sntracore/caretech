@@ -11,7 +11,7 @@ const pages = [
   ['/fire-safety/', 'Fire Alarm & Fire Protection Systems | CareTech', 'Explore CareTech fire alarms, hydrants, extinguishing systems, sprinklers and emergency evacuation solutions for your property.'],
   ['/cloud-solutions/', 'Connected Security & Cloud Solutions | CareTech', 'Explore connected surveillance and security options for remote viewing, alerts and access across your locations with CareTech.'],
   ['/about-us/', 'About CareTech | Security & Fire Safety Solutions', 'Learn about CareTech, the technology brands we supply, organizations we work with and our approach to safer spaces.'],
-  ['/contact/', 'Contact CareTech | CCTV, Fire Safety & Networking', 'Contact CareTech for CCTV, access control, fire protection, networking and connected security solutions. Call +91 92447 86801 or email caretechforit@gmail.com.']
+  ['/contact/', 'Contact CareTech | CCTV, Fire Safety & Networking', 'Visit CareTech at 101 Bus Stand, Manawar, Dhar, Madhya Pradesh 454446. Contact us for CCTV, fire safety, networking and security solutions.']
 ];
 
 function escapeHtml(value) {
@@ -38,6 +38,14 @@ const organization = {
   description: 'Security, networking and fire protection solutions.',
   email: 'caretechforit@gmail.com',
   telephone: '+91-92447-86801',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '101 Bus Stand',
+    addressLocality: 'Manawar',
+    addressRegion: 'Madhya Pradesh',
+    postalCode: '454446',
+    addressCountry: 'IN'
+  },
   contactPoint: [{ '@type': 'ContactPoint', contactType: 'sales', telephone: '+91-92447-86801', email: 'caretechforit@gmail.com' }]
 };
 const schema = JSON.stringify(organization).replaceAll('<', '\\u003c');

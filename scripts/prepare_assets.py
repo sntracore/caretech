@@ -76,16 +76,14 @@ for name, filename in customers.items():
     logo_card(ROOT / "costumerimges" / filename, OUT / f"customer-{slug}.webp")
 
 projects = [
-    "IMG_20251111_171018.jpg.jpeg",
-    "IMG_20251111_171035.jpg.jpeg",
-    "IMG_20251229_142553.jpg.jpeg",
-    "IMG_20260104_170110.jpg.jpeg",
-    "IMG_20260121_144317.jpg.jpeg",
-    "IMG_20260331_161421.jpg.jpeg",
+    (3, "IMG_20251229_142553.jpg.jpeg"),
+    (4, "IMG_20260104_170110.jpg.jpeg"),
+    (5, "IMG_20260121_144317.jpg.jpeg"),
+    (6, "IMG_20260331_161421.jpg.jpeg"),
 ]
-for index, filename in enumerate(projects, 1):
+for index, filename in projects:
     image = ImageOps.exif_transpose(Image.open(ROOT / "seelingbrandsbyowner" / filename)).convert("RGB")
     image = ImageOps.fit(image, (1200, 800), Image.Resampling.LANCZOS)
     image.save(OUT / f"project-{index:02}.webp", "WEBP", quality=78, method=6)
 
-print("Prepared Caretech logo, 16 brand logos, 5 customer logos, and 6 project photos.")
+print("Prepared CareTech logo, 16 brand logos, 5 customer logos, and 4 project photos.")
