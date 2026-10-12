@@ -38,6 +38,7 @@ const organization = {
   description: 'Security, networking and fire protection solutions.',
   email: 'caretechforit@gmail.com',
   telephone: '+91-88717-86801',
+  sameAs: ['https://www.instagram.com/caretech.in/', 'https://www.facebook.com/caretechforit/'],
   address: {
     '@type': 'PostalAddress',
     streetAddress: '101 Bus Stand',
