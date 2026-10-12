@@ -15,7 +15,12 @@ Open <http://localhost:8000/>. If port 8000 is already in use, choose another po
 
 ## Deploy to Vercel
 
-Import `sntracore/caretech` as a new Vercel project. The repository includes `vercel.json`, which sets the build command, `dist` output directory, route handling, and security headers. Leave the project Root Directory at the repository root. Pushes to `main` trigger deployments when the Vercel Git integration is connected.
+The repository supports either Vercel Root Directory setting:
+
+- Repository root: `vercel.json` runs `node scripts/generate-pages.mjs` and serves `dist`.
+- `dist`: `dist/vercel.json` runs the same page generator from inside `dist` and serves `.`.
+
+The `dist` project cannot access files above its Root Directory, so its generator and template live inside `dist`. Pushes to `main` trigger deployments when the Vercel Git integration is connected.
 
 Vercel's `VERCEL_PROJECT_PRODUCTION_URL` is used at build time to generate canonical URLs and `sitemap.xml`. If that system variable is unavailable, set `SITE_URL` to the final HTTPS site origin, such as `https://example.com`, and redeploy. Do not include a path in `SITE_URL`.
 
